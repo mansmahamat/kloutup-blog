@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <LayoutWrapper>
-        <PlausibleProvider domain="mansour-mahamat.dev">
+        <PlausibleProvider domain="blog.kloutup">
           <Component {...pageProps} />
         </PlausibleProvider>
       </LayoutWrapper>
