@@ -14,7 +14,7 @@ export async function getStaticPaths() {
   const tags = await getAllTags('blog')
 
   return {
-    paths: Object.keys(tags).map((tag) => ({
+    paths: Object.keys(tags)?.map((tag) => ({
       params: {
         tag,
       },
